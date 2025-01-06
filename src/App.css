@@ -1,0 +1,280 @@
+body{
+  /* background: linear-gradient(to right, #0A1128, #4E8CC0); */
+  /* background: linear-gradient(to right, #001F3F, #6C63FF); */
+  /* background: linear-gradient(to bottom, #011627, #2EC4B6); */
+  /* background: linear-gradient(to right, #102A43, #F4B400); */
+  /* background: linear-gradient(to bottom, #1B263B, #68A691, #A7A9BE); */
+  /* background: linear-gradient(to left, #0F2027, #203A43, #2C5364); */
+
+  background: linear-gradient(to right, #0A1128, #1B263B, #4E8CC0);
+
+
+
+
+
+}
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0; /* Remove unnecessary padding */
+  margin: 0; /* Remove unnecessary margins */
+}
+
+.side-form {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensure proper stacking on small screens */
+  background: rgba(255, 255, 255, 0.8); /* Example: White with transparency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.form .fields {
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%; /* Make the fields take full width */
+  font-weight: 700;
+  color: black;
+  margin: 0; /* Remove side margins */
+}
+.fields::placeholder{
+  color: #707070; /* Medium gray */
+
+}
+form {
+  display: flex;
+  flex-direction: row; /* Stack fields vertically */
+  align-items: center;
+  width: 100%;
+  gap: 90px; /* Space between image and fields */
+  justify-content: flex-start; /* Align items to the left (to keep the form on the left) */
+}
+
+form img {
+  width: 130%; /* Adjust image width as needed */
+  height: 407px; /* Keep the aspect ratio intact */
+  margin-top: 5px;
+  object-fit: cover; /* Ensure the image fills the space properly without stretching */
+  align-self: flex-end; /* Align the image to the right */
+}
+
+
+.account h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.account p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.account p a {
+  /* color: rgb(245, 18, 18); */
+  color: rgb(197, 43, 43);
+  text-decoration: none;
+}
+
+.inputs {
+  width: 100%; /* Input spans full width */
+  max-width: 400px; /* Optional: Limit max width for better design */
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  background: #EAF4FC; /* Soft pale blue */
+  border: none;
+  border-radius: 50px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.btn {
+  width: 100%; /* Button spans full width */
+  max-width: 320px; /* Optional: Limit max width for better design */
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(81, 189, 81);
+  color: beige;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1b5e20;
+}
+
+.form .fields-forgot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20vh;
+  font-weight:700 ;
+  color: black;
+}
+.side-form-forgot{
+  width: 45%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 135, 244);
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+
+.fields-forgot .inputs{
+  width: 150%;
+  height: 40px;
+  margin: 10px;
+  padding: 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+}
+.fields-reset .inputs{
+  width: 150%;
+  height: 40px;
+  margin: 10px;
+  padding: 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+}
+.forgot a{
+  position: absolute;
+  bottom: 225px;
+  left: 70%;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(0, 68, 255);
+  text-decoration: none;
+}
+.forgot a :hover{
+  cursor: pointer;
+}
+.form .fields-reset{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  font-weight:700 ;
+  color: black;
+}
+.side-form-reset{
+  width: 45%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 135, 244);
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+.account-forgot h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.account-login p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.account-login p a {
+  color:rgb(197, 43, 43);
+  text-decoration: none;
+}
+.account-login h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.account-forgot p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.account-forgot p a {
+  color:rgb(197, 43, 43);
+  text-decoration: none;
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+  .main-form {
+    top: 0px;
+
+    height: auto;
+    padding: 10px;
+  }
+
+  form {
+    margin: 0px;
+    display: flex;
+    flex-direction: column; /* Stack fields vertically */
+  }
+  .account{
+    position: absolute;
+    margin: 0%;
+    margin-bottom: 90%;
+  }
+  .account-login{
+    position: absolute;
+    margin: 0%;
+    margin-bottom:60%;
+  }
+  .account-forgot{
+    position: absolute;
+    margin: 0%;
+    margin-bottom:50%;
+  }
+  .forgot a{
+    position: absolute;
+    top: 85%;
+    left: 60%;
+  }
+  .side-form {
+    width: 90%;
+    top: 0px;
+    padding: 5px;
+  }
+
+  form img {
+    width: 100%;
+    height: 260px;
+  }
+
+  .inputs {
+    margin: 10px 0;
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+}
