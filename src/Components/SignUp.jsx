@@ -55,7 +55,7 @@ export default function SignUp(){
     if (!passwordRegex.test(addingData?.password)) {
         newErrors.password = "Password must contain at least 1 uppercase letter, 1 digit, and 1 special character.";
     }
-    if (!addingData?.mobileNo || addingData?.mobileNo.length !==10) {
+    if (!addingData?.mobileNo || addingData?.mobileNo.length!==10) {
         newErrors.mobileNo = "Mobile number must be 10 digits.";
     }
 
